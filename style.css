@@ -34,9 +34,52 @@
 
 
   .made__title{
-    padding: 32px 123px;
+    max-width: 171px;
+    width: 100%;
+    max-height: 24px;
+    height: 100%;
+    padding: 0 54px 20px 55px ;
+    
   }
 
+  @media screen and (min-width: 568px) {
+    .made__title {
+      max-width: 322px;
+      width: 100%;
+      max-height: 28px;
+      height: 100%
+      padding: 32px 123px;
+    }
+  }
+  .made__poster{
+    width: 171px;
+    height: 24px;
+  }
+  @media screen and (min-width: 568px) {
+    .made__poster {
+      max-width: 322px;
+      width: 100%;
+      max-height: 28px;
+      height: 100%
+    }
+  }
+  
+
+ .form__video{
+  width: 224px;
+  height: 199px;
+  width: 100%;
+  height: 100%;
+ }
+
+ @media screen and (min-width: 568px) {
+  .form__video {
+    max-width: 448px;
+    width: 100%;
+    max-height: 205px;
+    height: 100%
+  }
+}
 
 
 
@@ -64,9 +107,9 @@
   }
   
   .modal {
-    max-width: 528px;
+    max-width: 280px;
     width: 100%;
-    max-height: 581px;
+    max-height: 459px;
     height: 100%;
     background: var(--primary-white-color);
     position: relative;
@@ -79,14 +122,15 @@
     transition: -webkit-transform 250ms ease;
     transition: transform 250ms ease;
     transition: transform 250ms ease, -webkit-transform 250ms ease;
-    padding: 41px 44px 39px 36px;
+    padding: 28px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 568px) {
     .modal {
-      max-width: 450px;
+      max-width: 449px;
       width: 100%;
-      max-height: 609px;
+      max-height: 568px;
       height: 100%;
+      padding: 32px 60px;
     }
   }
   .modal__close {
@@ -109,7 +153,7 @@
    font-family: 'Montserrat';
    font-style: normal;
    font-weight: 400;
-   font-size: 16px;
+   font-size: 14px;
    line-height: 140%;
 
 
@@ -118,7 +162,13 @@ color: var(--primary-text-color);
     text-align: center;
     display: block;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: var(--primary-text-color);}
+
+    @media screen and (min-width: 568px) {
+      .modal__discription {
+      font-size: 16px;
+      line-height: 140%;
+      }
   }
   
   .form {
@@ -160,7 +210,7 @@ color: var(--primary-text-color);
   .form-row:not(:last-child) {
     margin-bottom: 10px;
   }
-  .form-row__input {
+  /* .form-row__input {
     display: block;
     max-width: 470px;
     width: 100%;
@@ -197,10 +247,10 @@ color: var(--primary-text-color);
   }
   .form-row__input:focus {
     border: 1px solid var(--accent-color);
-  }
-  .form-row__input .icon {
+  } */
+  /* .form-row__input .icon {
     padding-right: 12px;
-  }
+  } */
   .form-row__input:focus + svg {
     fill: var(--accent-color);
   }
