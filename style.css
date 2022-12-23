@@ -102,8 +102,8 @@
   .modal__cross {
     fill: var(--primary-text-color);
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: 17.33px;
+    top: 17.33px;
   }
   .modal__discription {
    font-family: 'Montserrat';
