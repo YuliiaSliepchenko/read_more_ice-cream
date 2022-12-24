@@ -66,6 +66,7 @@
   
 
  .form__video{
+  position: relative;
   width: 224px;
   height: 199px;
   width: 100%;
@@ -79,6 +80,17 @@
     max-height: 205px;
     height: 100%
   }
+}.form__video--btn{
+  
+  background-color: transparent;
+  height: 16.44px;
+  width: 16.48px;
+}
+.form__video--play{
+  font: var(--primary-white-color);
+  position: absolute;
+
+  z-index: 998;
 }
 
 
@@ -417,3 +429,6 @@ color: var(--primary-text-color);
     text-align: center;
     letter-spacing: 0.06em;
   }
+
+
+  /* ./video/318666739_548933026767203_8116096239020544953_n.mp4 */
